@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Gallery</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+        .gallery{
+            height: 100%;
+            width: 75%;
+            display: flex;
+            margin: 5% auto 0;
+            box-sizing: border-box;
+            
+        }
+        .image-box{
+            margin: 0 1%;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: .5s;
+        }
+        .image-box img{
+            height: 100%;
+            width: 80%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .image-box:hover{
+            flex-basis: 50%;
+        }
+        .active{
+            flex-basis: 50%;
+        }
+        .gallery:hover .active{
+            flex-basis: 0;
+        }
+        .image-box:nth-child(1):hover{
+            flex-basis: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Image Gallery</h1>
+    <div class="gallery">
+        <div class="image-box active">
+            <img src="../image/m1.jpg" >
+        </div>
+        <div class="image-box">
+            <img src="../image/m2.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m3.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m4.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m5.jpg" alt="">
+        </div>
+        <div class="image-box active">
+            <img src="../image/m6.jpg" >
+        </div>
+        <div class="image-box">
+            <img src="../image/m7.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m8.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m9.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m10.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m11.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="../image/m12.jpg" alt="">
+        </div>
+       
+       
+    </div>
+</body>
+</html>
